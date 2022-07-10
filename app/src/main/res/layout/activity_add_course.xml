@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCourseText"
+        android:text="Add Course"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseName"
+            android:layout_below="@id/addCourseText"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint=" Course Name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/editbackground"
+            android:drawableTint="@color/teal_700"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/teal_700"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:allowUndo="true"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/courseCode"
+            android:layout_below="@id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:hint=" Course Code"
+            android:background="@drawable/editbackground"
+            android:drawableTint="@color/teal_700"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/teal_700"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:allowUndo="true"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/courseFaculty"
+        android:layout_below="@id/courseCode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:hint=" Faculty"
+        android:background="@drawable/editbackground"
+        android:drawableTint="@color/teal_700"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/teal_700"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:allowUndo="true"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

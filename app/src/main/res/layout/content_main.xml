@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUsername"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Phineas Matome"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStudentNumber"
+            android:layout_below="@id/tvUsername"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="216618270"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDay"
+            android:layout_below="@id/tvStudentNumber"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Monday"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMorning"
+            android:layout_below="@id/tvDay"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Good"/>
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/dayIMG"
+           android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/recog_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvDay"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:id="@+id/imUserProfile"/>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/rel"
+        android:id="@+id/rel_subj"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textModules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="List of subjects for :"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/textModules"
+            android:fontFamily="@font/arbutus"
+            android:text="Tuesday"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:layout_below="@id/textModules"
+                android:id="@+id/tvView"/>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/weeklyview"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button"
+        android:text= "create notification"
+        android:layout_centerInParent= "true"
+        android:layout_alignParentBottom="true"
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content" />
+</RelativeLayout>

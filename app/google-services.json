@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "571453264182",
+    "project_id": "faceapp-139c1",
+    "storage_bucket": "faceapp-139c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571453264182:android:d9d21b7e805479e6c7a397",
+        "android_client_info": {
+          "package_name": "com.example.faceattendancesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571453264182-vjootbr0en6ndj1b0kfa9dqk2mji6s3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFWE3meX74XPchFFolig7k2yYBaPpvua4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571453264182-vjootbr0en6ndj1b0kfa9dqk2mji6s3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTimeTable">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:titleTextColor="@color/white"
+        app:title="Attendance History"
+        android:id="@+id/toolbarReport">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textStyle="bold"
+        android:layout_below="@id/toolbarReport"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Attendance Report"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/search_day"
+        android:text="Search day"
+       android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/tv"
+        android:background="@drawable/editbackground"
+        android:padding = "5dp"/>
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_below="@id/tv"
+           android:layout_marginRight="40dp"
+           android:src="@drawable/ic_baseline_search_24"
+          android:layout_alignParentRight="true"
+           android:layout_marginTop="10dp"
+          android:id="@+id/searchBtn"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_attendance_report"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_day"/>
+
+</RelativeLayout>

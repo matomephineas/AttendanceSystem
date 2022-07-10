@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/layout4"
+    android:background="@drawable/editbackground"
+  android:layout_margin="3dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="phineasmatome1@gmail.com"
+    android:textSize="18sp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/stdnt_email"
+    android:textStyle="bold"
+    android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stdnt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31/07/2021"
+        android:textSize="15sp"
+        android:id="@+id/stdnt_att_date"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stdnt_att_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="216618270"
+        android:textSize="15sp"
+        android:id="@+id/student_number"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/student_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data structures and algorithms"
+        android:textSize="15sp"
+        android:id="@+id/subject_att_name"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_below="@id/subject_att_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/atndceStatus"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+</RelativeLayout>
+</RelativeLayout>

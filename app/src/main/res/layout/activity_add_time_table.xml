@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Admin.AddSubject">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Add Time Table"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facultyHeader"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyHeader"
+        android:text="Development Software"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textSubjectName"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSubjectName"
+        android:text="DSO23AT"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textSubjectCode"/>
+
+    <LinearLayout
+        android:id="@+id/xxline2"
+       android:layout_below="@id/textSubjectCode"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Vanue"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="25dp"
+            android:gravity="end"
+            android:layoutDirection="ltr"
+            android:textAlignment="gravity"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinner_spinner1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_below="@id/xxline2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Vanue"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="25dp"
+            android:gravity="end"
+            android:layoutDirection="ltr"
+            android:textAlignment="gravity"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinner_spinner"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subjectStartTime"
+        android:layout_below="@id/line2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/black"
+        android:padding="5dp"
+        android:background="@drawable/editbackground"
+        android:hint="Select Start time"
+        android:textColorHint="@color/black"
+        android:drawableRight="@drawable/ic_baseline_access_timer"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/subjectEndTime"
+        android:layout_below="@id/subjectStartTime"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:drawableTint="@color/black"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/editbackground"
+        android:hint="Select End time"
+        android:textColorHint="@color/black"
+        android:drawableRight="@drawable/ic_baseline_access_timer"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnSaveTT"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Submit"
+        android:layout_below="@id/subjectEndTime"
+        android:background="@drawable/btn_background"
+        android:textAllCaps="false"
+
+        />
+</RelativeLayout>

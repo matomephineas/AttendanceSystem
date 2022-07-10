@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddSubject">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Add Modules to a course"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facultyHeader"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyHeader"
+        android:text="Information Technology"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textCourseName"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCourseName"
+        android:text="ICT"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textCourseCode"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCourseCode"
+        android:text="Computer Science"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textCourseFaculty"/>
+
+    <EditText
+        android:id="@+id/moduleName"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="subject name"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/teal_700"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/editbackground"
+        android:textColorHint="@color/teal_700"
+        android:layout_below="@id/textCourseFaculty"/>
+    <EditText
+        android:id="@+id/moduleCode"
+        android:layout_width="330dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/moduleName"
+        android:hint="subject code"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:background="@drawable/editbackground"
+        android:textColorHint="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/btnSaveModule"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:layout_below="@id/moduleCode"
+        android:background="@drawable/btn_background"
+        android:textAllCaps="false"
+        android:layout_marginLeft="40dp"
+        />
+</RelativeLayout>

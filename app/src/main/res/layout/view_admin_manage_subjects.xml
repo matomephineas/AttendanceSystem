@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/relative2"
+        android:background="@drawable/subject_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+          android:textStyle="bold"
+            android:id="@+id/admin_view_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Data structures and algorithm"
+            android:textColor="@color/teal_700"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/admin_view_qual_name"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/admin_view_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="ADRS20 AdvDip(Computer Science)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/admin_view_qual_name"
+            android:id="@+id/admin_view_subject_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DTD117"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+             />
+        <TextView
+            android:id="@+id/admin_view_qual_code"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/admin_view_subject_code"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="ADRS20"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Admin.AddSubject">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Asign Subject to Lecture"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facultyHeader"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyHeader"
+        android:text="Development Software"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textSubjectName"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSubjectName"
+        android:text="DSO23AT"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textSubjectCode"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_below="@id/textSubjectCode"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lectures"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

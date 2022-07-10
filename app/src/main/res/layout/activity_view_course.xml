@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCourse">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Choose Faculty"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facultyHeader"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultyHeader"
+        android:text="Search Programme"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textSearch"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/textSearch"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/editbackground"
+        app:queryHint="Search Faculty"
+        android:id="@+id/searchFaculty"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSearch"
+        android:text="Go"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/searchFaculty"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/buttonSearch"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchFaculty"
+        android:text="List of courses"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:id="@+id/textViewCourse"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCourse"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:id="@+id/recycler_student_view_course"/>
+    </ScrollView>
+</RelativeLayout>

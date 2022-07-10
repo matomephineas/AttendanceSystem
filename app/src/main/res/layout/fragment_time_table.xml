@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTimeTable">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/generateReport"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/download" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/viewReport"
+            android:layout_width="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/attendance" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="View Time Table"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facultyHeader"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timetable"
+        android:layout_below="@id/facultyHeader"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

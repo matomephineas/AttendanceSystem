@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="Profile" />
+
+
+        <item
+            android:id="@+id/nav_add_course"
+            android:icon="@drawable/course"
+            android:title="Add Course" />
+        <item
+            android:id="@+id/nav_add_subjects"
+            android:icon="@drawable/ic_baseline_subject_24"
+            android:title="Add Subjects" />
+        <item
+            android:id="@+id/nav_add_attendance"
+            android:icon="@drawable/attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/notifications"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Logout" />
+    </group>
+</menu>

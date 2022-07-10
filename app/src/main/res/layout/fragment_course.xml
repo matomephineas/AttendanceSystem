@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminHome">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caurseHeader"
+        android:text="Manage Courses"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/teal_700"
+        android:textSize="22sp"
+
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_below="@id/caurseHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addedListOfCourses"
+        android:text="List of available courses"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/addedListOfCourses"
+        android:id="@+id/recycler_courses"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab2"
+        android:foregroundGravity="right|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Submit"
+        android:src="@drawable/ic_baseline_person_add_24"
+        android:layout_alignParentBottom="true"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:foregroundGravity="right|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Submit"
+        android:src="@drawable/ic_baseline_post_add_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
